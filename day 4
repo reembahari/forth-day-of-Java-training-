@@ -1,0 +1,42 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        String[] name = new String[5];//the length
+        name[0] = "wafa";//index
+        name[1] = "wejdan";
+        name[2] = "wed";
+        name[3] = "maram";
+        name[4] = "alma";
+        System.out.printf(name[2]);//of the index
+        System.out.printf(Arrays.toString(name));//the print of all array
+        String[] name1 = {"wafa", "wejdan", "wed"};
+        System.out.println(Arrays.toString(name1));//to print arrays normal
+        int[] name2 = {30, 40, 90, 99, 98};
+        for (int n : name2) {
+            if (n > 90) {
+                System.out.println(n);//to print number graet of 90 use the for each only use the name value not array
+
+            }
+
+            String[] color = {"green", "blue", "black"};
+            for (String c : color) {
+                System.out.println(c);
+                if (c == "blue") {
+                    break;
+
+                }
+
+            }
+
+     ArrayList<String>color1=new ArrayList<String>();
+        color1.add("red");
+        color1.add("black");
+        color1.add("green");
+        color1.add("blue");
+        color1.set(1,"white");
+        color1.remove(2);
+        System.out.println(color1);
+        }
+    }
+}
+
